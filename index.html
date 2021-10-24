@@ -11,8 +11,9 @@
     <div id="app">
       <img :class="gender" v-bind:src="picture" alt="" />
       <h1> <strong>{{ title }}: </strong>{{ firstname }} {{ lastname }}</h1>
-      <h3>Email: {{ email }}</h3>
-      <h4>Where does he/she come from?:  {{ country }}</h4>
+      <h3> <strong>Email: </strong> {{ email }}</h3>
+      <h4>Where does he/she come from?:  <caption>{{ country }} </caption></h4>
+      <br>
       <button v-on:click="getUser()" :class="gender">Get Random User</button>
     </div>
     <script src="https://unpkg.com/vue@3.2.20"></script>
